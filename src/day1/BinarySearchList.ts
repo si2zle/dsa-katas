@@ -1,5 +1,5 @@
 // binary search requires a sorted list
-export default function bs_list(haystack: number[], needle: number): boolean {
+export default function binary_search(haystack: number[], needle: number): boolean {
     let startIndex = 0;
     let endIndex = haystack.length;
 
@@ -17,6 +17,6 @@ export default function bs_list(haystack: number[], needle: number): boolean {
             endIndex = middleIndex;
         }
     } while (startIndex < endIndex);
-    
+
     return false;
 }
